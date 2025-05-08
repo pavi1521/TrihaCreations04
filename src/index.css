@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 bg-white;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-gold hover:bg-gold/90 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02];
+  }
+  
+  .btn-secondary {
+    @apply border-2 border-gold text-gold hover:bg-gold hover:text-white px-6 py-3 rounded-md transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50;
+  }
+}
+
+/* Custom Scrollbar */
+/* Scrollbar Styles */
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f3f4f6; /* Tailwind's bg-gray-100 */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(212, 163, 115, 0.6); /* Tailwind's gold/60 */
+  border-radius: 9999px; /* rounded-full */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(212, 163, 115, 0.8); /* Tailwind's gold/80 */
+}
+
+/* Smooth transitions */
+.page-transition {
+  @apply transition-opacity duration-300;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+/* Loading animation */
+.loading-spinner {
+  @apply animate-spin rounded-full border-4 border-gray-200 border-t-[color:rgba(212,163,115,1)];
+  height: 2.5rem; /* h-10 */
+  width: 2.5rem;  /* w-10 */
+}
