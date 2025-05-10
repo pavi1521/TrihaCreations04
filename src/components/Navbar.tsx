@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center" onClick={closeMenu}>
-            <img src="/dist/logo.jpeg" alt="triha" className="h-12 w-12 rounded-full object-cover border border-amber-700 shadow-sm" />
+            <img src="/logo.jpeg" alt="triha" className="h-12 w-12 rounded-full object-cover border border-amber-700 shadow-sm" />
             <span className="text-2xl font-serif tracking-wider text-amber-1500 ml-2">Triha</span>
                <span className="text-2xl font-serif tracking-wider text-amber-1500">Creation</span>
             </Link>

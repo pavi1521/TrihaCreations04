@@ -95,7 +95,7 @@ const Checkout: React.FC = () => {
               <div className="border p-4 rounded-md hover:shadow transition">
                 <h4 className="font-semibold text-gray-700 mb-2">Google Pay</h4>
                 <img
-                  src="/dist/scan.jpeg"
+                  src="/scan.jpeg"
                   alt="Google Pay QR Code"
                   className="h-48 mx-auto rounded border"
                 />
@@ -105,9 +105,9 @@ const Checkout: React.FC = () => {
               <div className="border p-4 rounded-md hover:shadow transition">
                 <h4 className="font-semibold text-gray-700 mb-3">UPI / Wallet Options</h4>
                 <div className="flex justify-center gap-4 items-center">
-                  <img src="/dist/razor.png" alt="Razorpay" className="h-10" />
-                  <img src="/dist/phonepay.png" alt="PhonePe" className="h-8" />
-                  <img src="/dist/paytm.png" alt="Paytm" className="h-8" />
+                  <img src="/razor.png" alt="Razorpay" className="h-10" />
+                  <img src="/phonepay.png" alt="PhonePe" className="h-8" />
+                  <img src="/paytm.png" alt="Paytm" className="h-8" />
                 </div>
                 <button className="mt-4 w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-md transition">
                   Pay with UPI
