@@ -17,6 +17,7 @@ import CategoryRegionDetail from './pages/CategoryRegionDetail';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 
+
 function App() {
   return (
     <CartProvider>
@@ -39,6 +40,7 @@ function App() {
               <Route path="/category/:categoryName" element={<CategoryDetail />} />
               <Route path="/category/:categoryName/:regionName" element={<CategoryRegionDetail />} />
               <Route path="/cart" element={<Cart />} />
+              
             </Routes>
           </main>
           <Footer />

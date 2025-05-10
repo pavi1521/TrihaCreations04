@@ -38,7 +38,7 @@ const Checkout: React.FC = () => {
               <label className="block text-sm font-medium text-gray-700">Full Name</label>
               <input
                 type="text"
-                placeholder="N"
+                placeholder="Name"
                 className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
               />
             </div>
