@@ -39,7 +39,7 @@ export const regionProducts: Record<string, Product[]> = {
       id: 'tn004',
       name: 'Chettinad Cotton Bag',
       price: 1200,
-      image: 'https://images.app.goo.gl/sapSgU6gAQRpj3TG8',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgqOm8oBV2CGcMikNCbdW9lHMHkCr1ryh4cQ&s',
       artisan: 'Lakshmi Crafts Collective',
       description: 'Handwoven Chettinad cotton bag with traditional patterns. Perfect for everyday use and sustainable shopping.',
       category: 'Bags',

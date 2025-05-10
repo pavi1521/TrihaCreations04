@@ -30,6 +30,62 @@ const Checkout: React.FC = () => {
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
         <h2 className="text-3xl font-semibold mb-6 text-gray-900">Checkout</h2>
 
+        {/* Shipping Address */}
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">Shipping Address</h3>
+          <form className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Full Name</label>
+              <input
+                type="text"
+                placeholder="N"
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Address</label>
+              <textarea
+                placeholder="123, Example Street"
+                rows={2}
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">City</label>
+              <input
+                type="text"
+                placeholder="Chennai"
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">State</label>
+              <input
+                type="text"
+                placeholder="Tamil Nadu"
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Pincode</label>
+              <input
+                type="text"
+                placeholder="600001"
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+              <input
+                type="tel"
+                placeholder="9876543210"
+                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-amber-500 focus:border-amber-500"
+              />
+            </div>
+          </form>
+        </div>
+
+        {/* Payment and Summary */}
         <div className="grid md:grid-cols-2 gap-6">
           {/* Payment Methods */}
           <div>
@@ -39,7 +95,7 @@ const Checkout: React.FC = () => {
               <div className="border p-4 rounded-md hover:shadow transition">
                 <h4 className="font-semibold text-gray-700 mb-2">Google Pay</h4>
                 <img
-                  src="/dist/assets/scan.jpeg"
+                  src="/dist/scan.jpeg"
                   alt="Google Pay QR Code"
                   className="h-48 mx-auto rounded border"
                 />
@@ -49,9 +105,9 @@ const Checkout: React.FC = () => {
               <div className="border p-4 rounded-md hover:shadow transition">
                 <h4 className="font-semibold text-gray-700 mb-3">UPI / Wallet Options</h4>
                 <div className="flex justify-center gap-4 items-center">
-                  <img src="/dist/assets/razor.png" alt="Razorpay" className="h-10" />
-                  <img src="/dist/assets/phonepay.png" alt="PhonePe" className="h-8" />
-                  <img src="/dist/assets/paytm.png" alt="Paytm" className="h-8" />
+                  <img src="/dist/razor.png" alt="Razorpay" className="h-10" />
+                  <img src="/dist/phonepay.png" alt="PhonePe" className="h-8" />
+                  <img src="/dist/paytm.png" alt="Paytm" className="h-8" />
                 </div>
                 <button className="mt-4 w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-md transition">
                   Pay with UPI
