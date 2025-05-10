@@ -105,9 +105,9 @@ const Checkout: React.FC = () => {
               <div className="border p-4 rounded-md hover:shadow transition">
                 <h4 className="font-semibold text-gray-700 mb-3">UPI / Wallet Options</h4>
                 <div className="flex justify-center gap-4 items-center">
-                  <img src="https://media.tradly.app/images/marketplace/34521/razor_pay_icon-ICtywSbN.png" alt="Razorpay" className="h-10" />
-                  <img src="https://eu-images.contentstack.com/v3/assets/blt7dacf616844cf077/blt85b08b4917701bc0/67997d68d8a86f00203713cc/phonepe-logo-icon.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale" alt="PhonePe" className="h-8" />
-                  <img src="https://play-lh.googleusercontent.com/IWU8HM1uQuW8wVrp6XpyOOJXvb_1tDPUDAOfkrl83RZPG9Ww3dCY9X1AV6T1atSvgXc" alt="Paytm" className="h-8" />
+                  <img src="/dist/razor.png" alt="Razorpay" className="h-10" />
+                  <img src="/dist/phonepay.png" alt="PhonePe" className="h-8" />
+                  <img src="/dist/paytm.png" alt="Paytm" className="h-8" />
                 </div>
                 <button className="mt-4 w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-md transition">
                   Pay with UPI
